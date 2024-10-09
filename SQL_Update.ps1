@@ -34,8 +34,8 @@ $SQL_file = $args[0] #Name of SQL scipt template file that will be used to updat
 # $SQL_script_folder
 # $approval_request_message
 
-. $PSScriptRoot\Set_SQL_Update_vars.ps1 $SQL_file
-. $PSScriptRoot\Get-ValuesFromClipboard.ps1
+. $PSScriptRoot\Includes\Set_SQL_Update_vars.ps1 $SQL_file
+. $PSScriptRoot\Includes\Get-ValuesFromClipboard.ps1
 
 #------------------------------------                                    ------------------------------------#
 
