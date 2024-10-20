@@ -23,7 +23,7 @@ Workflow:
 Import-Module SqlServer
 $ErrorActionPreference = "Inquire"
 
-[string]$ProcessFolder = Get-Content $PSScriptRoot\process_excel_folder.txt -Raw
+[string]$ProcessFolder = Get-Content $PSScriptRoot\includes\process_excel_folder.txt -Raw
 
 #-------------------------------------------------------------------------------------------------------------#
 

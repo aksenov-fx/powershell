@@ -61,7 +61,8 @@ function Get-Entities($server, $columns) {
     $QueryEntities = $QueryEntities -join ", "
 
     Write-Host "Number of Entities in Clipboard:" $Entities.count
-    Write-Host "Number of Entities in DB:" @(Get-Entities $SQLServerProd $entity_name_column).count #@ converts object to array for compatibility with PS5, since Invoke-SqlCmd returns different object type than PS7
+    Write-Host "Number of Entities in DB:" @(Get-Entities $SQLServerProd $entity_name_column).count 
+    #@ converts object to array for compatibility with PS5, since Invoke-SqlCmd returns different object type than PS7
 
 #[2] Get date
     Write-Host `n"Please copy the date to clipboard. Format: 01.12.2023"
