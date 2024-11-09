@@ -2,7 +2,7 @@
 
 .DESCRIPTION
 
-A script to automate a procedure for manual SQL data updates
+A script to automate the procedure for manual SQL data updates
 The script accepts a name of an SQL template file (.sql) as an argument
 It uses the template to generate a working SQL script, executes it on a stage (pred) server and outputs the changes
 
